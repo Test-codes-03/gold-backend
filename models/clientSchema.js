@@ -38,7 +38,7 @@ const ClientSchema = mongoose.Schema({
     },
     
     gst: {
-      type: Number, 
+      type: String, 
       required: [true, 'Please enter gst'],
     },
     charge: {
@@ -49,5 +49,3 @@ const ClientSchema = mongoose.Schema({
 
     
 });
-
-module.exports = mongoose.model('clients', ClientSchema);
