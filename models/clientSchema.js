@@ -38,11 +38,11 @@ const ClientSchema = mongoose.Schema({
     },
     
     gst: {
-      type: String, 
+      type: Number, 
       required: [true, 'Please enter gst'],
     },
     charge: {
-      type: String, 
+      type: Number, 
       required: [true, 'Please enter charge'],
     },
     createdAt: { type: Date, default: Date.now } // Default timestamp
