@@ -37,6 +37,8 @@ const createClient = asyncHandler(async (req, res) => {
     phone_number,
     select_type,
     schemes,
+    gst,
+    charge,
   } = req?.body?.formData;
 
   if (paymentId === "") {
@@ -250,9 +252,14 @@ const generateReceipt = (paymentData, filePath) => {
     doc.text(`Email: ${paymentData.email}`);
     doc.moveDown();
     // Amount
-    doc.text(`Amount Paid: ${paymentData.amount}`, {
+    doc.text(`Charge: ₹${paymentData.charge}`, { align: "right" });
+    doc.moveDown();
+    doc.text(`GST (3%): ₹${paymentData.gst}`, { align: "right" });
+    doc.moveDown();
+    doc.text(`Total Amount Paid: ₹${paymentData.amount}`, {
       align: "right",
     });
+    
     doc.moveDown(4);
 
     // Footer
