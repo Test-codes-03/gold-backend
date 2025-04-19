@@ -252,7 +252,7 @@ const generateReceipt = (paymentData, filePath) => {
     doc.text(`Email: ${paymentData.email}`);
     doc.moveDown();
     // Amount
-    doc.text(`Charge: ₹${paymentData.charge}`, { align: "right" });
+    doc.text(`Making Charge: ₹${paymentData.charge}`, { align: "right" });
     doc.moveDown();
     doc.text(`GST (3%): ₹${paymentData.gst}`, { align: "right" });
     doc.moveDown();
