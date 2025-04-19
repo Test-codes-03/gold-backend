@@ -63,7 +63,7 @@ const createClient = asyncHandler(async (req, res) => {
   const newClient = await Client.create({
     userid: userid,
     name: name,
-    amount: amount,
+    amount: Number(amount).toFixed(2),
     email: email,
     phone_number: phone_number,
     select_type: select_type,
