@@ -68,6 +68,8 @@ const createClient = asyncHandler(async (req, res) => {
     phone_number: phone_number,
     select_type: select_type,
     schemes: schemes,
+    gst:gst,
+    charge:charge,
     paymentId: paymentId,
     paymentStatus: paymentStatus,
   });
