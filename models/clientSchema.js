@@ -36,16 +36,9 @@ const ClientSchema = mongoose.Schema({
         type: String,
         required: [true, 'Please enter paymentStatus'],
     },
-    
-    gst: {
-      type: String, 
-      required: [true, 'Please enter gst'],
-    },
-    charge: {
-      type: Number, 
-      required: [true, 'Please enter charge'],
-    },
     createdAt: { type: Date, default: Date.now } // Default timestamp
 
     
 });
+
+module.exports = mongoose.model('clients', ClientSchema);
