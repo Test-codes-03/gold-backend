@@ -54,6 +54,7 @@ const allowedOrigins = [
   "http://localhost:3000",
   "https://homepagejwlnew.netlify.app",
   "https://gold-site.netlify.app",
+  "https://salemjewellery.in",
 ];
 app.use(
   cors({
