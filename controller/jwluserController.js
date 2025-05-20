@@ -59,7 +59,7 @@ const forgotPassword = asyncHandler(async (req, res) => {
 
     console.log(registeredUser, "register user");
 
-    const resetUrl = `https://homepagejwlnew.netlify.app/reset-password?token=${resetToken}`;
+    const resetUrl = `https://salemjewellery.in/reset-password?token=${resetToken}`;
 
     const transporter = nodemailer.createTransport({
       service: "Gmail",
