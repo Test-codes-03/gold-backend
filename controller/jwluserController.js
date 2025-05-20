@@ -212,7 +212,7 @@ const resetPassword = asyncHandler(async (req, res) => {
       </div>
 
       <div class="footer">
-        <p>&copy; 2024 Salem Jewellery. All rights reserved.</p>
+        <p>&copy; 2025 Salem Jewellery. All rights reserved.</p>
       </div>
     </div>
 
